@@ -20,9 +20,9 @@
 
 	<link rel="stylesheet" href="css/introduction.css">
 	<link rel="stylesheet" href="css/common.css">
+	<link rel="stylesheet" href="css/home.css">
 	
 	<!-- Style theme. More available in /themes/style/ or create your own. -->
-	<link rel="stylesheet" href="themes/style/swiss.css">
 	
 	<!-- Transition theme. More available in /themes/transition/ or create your own. -->
 	<link rel="stylesheet" href="themes/transition/horizontal-slide.css">
@@ -30,22 +30,101 @@
 	<!-- Required Modernizr file -->
 	<script src="modernizr.custom.js"></script>
 </head>
-<body class="introduction">
+<body class="home">
 
 <!-- Begin slides. Just make elements with a class of slide. -->
 <article class="deck-container">
-	<section class="slide" id="title-slide">
-		<h1>Started With JavaScript & jQuery</h1>
-	</section>
 
-	<section class="slide">
-		<h1>Content</h1>
+	<section class="slide" id="intro">
+		<div>
+			<hgroup>
+				<h1>Study.hn #1</h1>
+				<h2>JavaScript & jQuery</h2>
+			</hgroup>
+		
+			<p>
+				<a href="https://github.com/imakewebthings/deck.js/zipball/stable" class="download">Download</a>
+				or <a href="#sample" class="next">→</a> to learn more.
+			</p>
+		</div>
 	</section>
+	
+	<section class="slide" id="sample">
+			<pre><code>&lt;body class="deck-container<span class="deck-state"> on-slide-1</span>"&gt;
+	  &lt;section class="slide<span class="slide-state"> deck-previous</span>"&gt;
+	    &lt;h1&gt;My Presentation&lt;/h1&gt;
+	  &lt;/section&gt;
 
-	<section class="slide">
-		<h1>Here</h1>
-	</section>
-</article>
+	  <span class="example-current">&lt;section class="slide<span class="slide-state"> deck-current</span>"&gt;
+	    &lt;h2&gt;Slide Header&lt;/h2&gt;
+	    &lt;p&gt;Here is a list of points:&lt;/p&gt;
+	    &lt;ul&gt;
+	      &lt;li&gt;Point 1&lt;/li&gt;
+	      &lt;li&gt;Point 2&lt;/li&gt;
+	      &lt;li&gt;Point 3&lt;/li&gt;
+	    &lt;/ul&gt;
+	  &lt;/section&gt;</span>
+
+	  <span class="example-next">&lt;section class="slide<span class="slide-state"> deck-next</span>"&gt;
+	    &lt;h2&gt;Another Slide&lt;/h2&gt;
+	    &lt;blockquote cite="http://example.com"&gt;
+	      &lt;p&gt;Lorem ipsum dolor sit amet.&lt;/p&gt;
+	      &lt;p&gt;&lt;cite&gt;Cicero&lt;/cite&gt;&lt;/p&gt;
+	    &lt;/blockquote&gt;
+	  &lt;/section&gt;</span>
+	&lt;/body&gt;</code></pre>
+
+			<h2>How Does It Work?</h2>
+
+			<div class="sample-content">
+				<p class="slide deck-after" id="slides-html">Slides are basic HTML.</p>
+				<p class="slide deck-after" id="slide-states">The <a href="./docs/#deck-core">deck.core</a> module keeps track of slide states <span class="slide deck-after" id="deck-states">and deck states</span><span class="slide deck-after" id="css-role">, leaving CSS to define what each state look like…</span></p>
+				<p class="slide deck-after" id="css-transition">…and how to transition between&nbsp;them.</p>
+				<p class="slide deck-after" id="extensions"><a href="./introduction/#extensions">Extensions</a> use core <a href="./docs/#deck-core-events">events</a> and <a href="./docs/#deck-core-methods">methods</a> to add goodies<span class="slide deck-after" id="add-what-you-want">, giving presenters the freedom to add what they want</span><span class="slide deck-after" id="leave-stuff-out"> and leave out what they don’t.</span></p>
+			</div>
+		</section>
+		
+		<section class="slide" id="now-what">
+			<h2>Great. Now What?</h2>
+			
+			<div class="personas">
+				<div class="slide deck-after" id="noob">
+					<h3>Only Know HTML?</h3>
+					<p>Use included premade themes and templates to start making your deck&nbsp;immediately.</p>
+					<p><a class="cta" href="./introduction">Get Started</a></p>
+				</div>
+			
+				<div class="slide deck-after" id="badass">
+					<h3>CSS+JS Badass?</h3>
+					<p>Make custom decks with the API exposed by the core and&nbsp;extensions.</p>
+					<p><a class="cta" href="./docs">View Docs</a></p>
+				</div>
+			
+				<div class="slide deck-after" id="in-between">
+					<h3>Something In-between?</h3>
+					<p>Take a little from both worlds. Tweak a theme, hack an extension, or write some of your&nbsp;own.</p>
+				</div>
+			</div>
+			
+			<p class="slide deck-after" id="download-now"><a href="https://github.com/imakewebthings/deck.js/zipball/stable" class="download">Download</a></p>
+		</section>
+		
+		<form action="." method="get" class="goto-form">
+			<label for="goto-slide">Go to slide:</label>
+			<input type="text" name="slidenum" id="goto-slide" list="goto-datalist">
+			<datalist id="goto-datalist"><option value="intro"></option><option value="sample"></option><option value="slides-html"></option><option value="slide-states"></option><option value="deck-states"></option><option value="css-role"></option><option value="css-transition"></option><option value="extensions"></option><option value="add-what-you-want"></option><option value="leave-stuff-out"></option><option value="now-what"></option><option value="noob"></option><option value="badass"></option><option value="in-between"></option><option value="download-now"></option></datalist>
+			<input type="submit" value="Go">
+		</form>
+		
+		<a href="#intro" class="deck-prev-link" title="Previous">←</a>
+		<a href="#slides-html" class="deck-next-link" title="Next">→</a>
+		
+		<p class="deck-status">
+			<span class="deck-status-current">2</span>
+			/
+			<span class="deck-status-total">15</span>
+		</p>
+	</article>
 <!-- End slides. -->
 
 
