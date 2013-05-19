@@ -246,6 +246,79 @@
     </pre>
     <h3 class="slide" id="dom">JavaScriptといえば、「DOMの操作」と認識される方が多い</h3>
   </section>
+  
+   <section class="slide" id="dom1">
+   <pre>&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;ja&quot;&gt;
+&lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot;&gt;
+    &lt;title&gt;JavaScriptの勉強&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h1&gt;JavaScriptの勉強&lt;/h1&gt;
+    &lt;p&gt;僕の名前は&lt;span <span class="getelementbyid2">id=&quot;myName&quot;&gt;</span>@taguchi&lt;/span&gt;です！&lt;/p&gt;
+    &lt;p&gt;価格: &lt;input type=&quot;text&quot; <span class="getelementbyid2">id=&quot;price&quot;&gt;</span>円&lt;/p&gt;
+    &lt;script&gt;
+        <span class="getelementbyid">// DOM
+        var e = document.getElementById(&#039;myName&#039;);
+        e.innerHTML = &#039;たぐち&#039;;
+        
+        var n = document.getElementById(&#039;price&#039;);
+        n.value = 500;
+        </span>
+    &lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+
+
+
+</pre>
+    <h2>よく使われるDOM操作</h2>
+    <ol class="yokooki">
+      <li class="slide" id ="getelementbyid"><h4>document.getElementById</h4><p>HTML内の取ってくる部分をIDで指定</p></li>
+      <li class="slide" id ="idigai">
+        <ul><h4>その他のgetElement(s)Byなんとか</h4>
+          <li>document.getElementsByName()</li> 
+          <li>document.getElementsByTagName()</li>
+          <li>document.getElementsByClassName()</li>
+        </ul>
+      </li>
+    </ol>
+  </section>
+  
+   <section class="slide" id="dom2"><pre>&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;ja&quot;&gt;
+&lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot;&gt;
+    &lt;title&gt;JavaScriptの勉強&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h1&gt;JavaScriptの勉強&lt;/h1&gt;
+    &lt;p&gt;&lt;input type=&quot;button&quot; value=&quot;クリック！&quot; id=&quot;myButton&quot;&gt;&lt;/p&gt;
+    &lt;script&gt;
+        // DOM - Event
+        
+        var e = document.getElementById(&#039;myButton&#039;);
+        <span class="click">e.onclick = function () {
+            alert(&quot;クリックされました！&quot;);
+        }</span>
+    &lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+
+
+
+
+</pre>
+    <h2>イベント処理のDOM操作</h2>
+    <ol class="yokooki">
+      <li class="slide" id ="click"><h5>DOMにイベントを結びつけて「このボタンがクリックされたら○○する」を実現</h5></li>
+      <li class="slide" id ="event"><p>変数に保存されたエレメントにonClickを付ける事でイベントが発火したことが読み取れる</p></li>
+    </ol>
+  </section>
+  
+  
+  
   <section class="slide" id="jquery">
     <iframe src="http://www.slideshare.net/slideshow/embed_code/7665168" width="600" height="400" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC;border-width:1px 1px 0;margin-bottom:5px" allowfullscreen webkitallowfullscreen mozallowfullscreen> </iframe> <div style="margin-bottom:5px"> <strong> <a href="http://www.slideshare.net/hayatomizuno/jquery-7665168" title="ノンプログラマーのためのjQuery入門" target="_blank">ノンプログラマーのためのjQuery入門</a> </strong> from <strong><a href="http://www.slideshare.net/hayatomizuno" target="_blank">Hayato Mizuno</a></strong> </div>
   </section>

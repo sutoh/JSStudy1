@@ -711,7 +711,7 @@
     z-index: 4;
   }
 
-  #sample2 > pre, #sample3 > pre {
+  #sample2 > pre, #sample3 > pre  {
     border: 1px solid #ddd;
     padding: 10px;
     background: #fff;
@@ -720,7 +720,19 @@
     box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1), 0 0 40px rgba(0, 0, 0, 0.05) inset;
     position: relative;
     float: right;
-    width: 435px;
+    width: 600px;
+    margin: 32px 0 16px 30px;
+  }
+  #dom1 > pre, #dom2 > pre  {
+    border: 1px solid #ddd;
+    padding: 10px;
+    background: #fff;
+    -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1), 0 0 40px rgba(0, 0, 0, 0.05) inset;
+    -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1), 0 0 40px rgba(0, 0, 0, 0.05) inset;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1), 0 0 40px rgba(0, 0, 0, 0.05) inset;
+    position: relative;
+    float: right;
+    width: 600px;
     margin: 32px 0 16px 30px;
   }
   .slide .slide {
@@ -795,6 +807,34 @@
   .on-slide-17 .kansu {
     color: 111;
   }
+  
+  .on-slide-22 .getelementbyid {
+    color: white;
+  }
+  .on-slide-23 .getelementbyid {
+    color: red;
+  }
+  .on-slide-24 .getelementbyid {
+    color: 111;
+  }
+
+  .on-slide-23 .getelementbyid2 {
+    color: red;
+  }
+  .on-slide-24 .getelementbyid2 {
+    color: 111;
+  }
+  
+  .on-slide-25 .click {
+    color: white;
+  }
+  .on-slide-26 .click,.on-slide-27 .click  {
+    color: red;
+  }
+  .on-slide-28 .click {
+    color: 111;
+  }
+
 }
 /*
 @media print {
