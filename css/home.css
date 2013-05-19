@@ -171,6 +171,13 @@
     text-decoration: underline;
   }
 
+  #sample h3 {
+    font-family: "UltraRegular", Georgia, serif;
+    font-weight: normal;
+    color: #000;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+  }
+
   .goto-form {
     display: none;
     position: absolute;
@@ -704,11 +711,92 @@
     z-index: 4;
   }
 
+  #sample2 > pre, #sample3 > pre {
+    border: 1px solid #ddd;
+    padding: 10px;
+    background: #fff;
+    -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1), 0 0 40px rgba(0, 0, 0, 0.05) inset;
+    -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1), 0 0 40px rgba(0, 0, 0, 0.05) inset;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1), 0 0 40px rgba(0, 0, 0, 0.05) inset;
+    position: relative;
+    float: right;
+    width: 435px;
+    margin: 32px 0 16px 30px;
+  }
   .slide .slide {
     min-height: 0;
     height: auto;
   }
+  #sample > pre > .red{
+    color: white;
+  }
+  .on-slide-3 #sample > .code-4 {
+    color: white;
+  }
+  .on-slide-5 #sample > pre > .red{ 
+    color: red;
+  }
+  .on-slide-4 .code-4 {
+    color: red;
+  }
+  .on-slide-5 .code-4 {
+    color: #111;
+  }
+  .on-slide-6 #sample > pre > .red {
+    color: #111;
+  }
+  .on-slide-6 #sample > pre > .red {
+    color: #111;
+  }
+  .on-slide-6 .hozon {
+    display: block;
+  }
+  .on-slide-3 .hozon,.on-slide-4 .hozon ,.on-slide-5 .hozon  {
+    display: none;
+  }
+  .on-slide-8 .helloworld {
+    color: red;
+  }
+  .on-slide-9 .moji {
+    color: red;
+  }
+  .on-slide-10 .kanma {
+    color: red;
+  }
+  .on-slide-11 .jikkou {
+    display: block;
+    width : 300px;
+    position: relative;
+  }
+  .jikkou > img {
+    float: left;
+    margin-left: 30px; 
+  }
+  .on-slide-7 .jikkou,.on-slide-8 .jikkou,.on-slide-9 .jikkou ,.on-slide-10 .jikkou  {
+    display: none;
+  }
+  
+  .on-slide-12 .hensu {
+    color: white;
+  }
+  .on-slide-13 .hensu {
+    color: red;
+  }
+  .on-slide-14 .hensu {
+    color: 111;
+  }
+
+  .on-slide-15 .kansu {
+    color: white;
+  }
+  .on-slide-16 .kansu {
+    color: red;
+  }
+  .on-slide-17 .kansu {
+    color: 111;
+  }
 }
+/*
 @media print {
   * {
     background: transparent !important;
@@ -789,4 +877,8 @@
   #now-what a {
     display: none;
   }
+  #sample > pre > .red{
+    color:red;
+  }
 }
+*/
