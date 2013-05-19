@@ -212,9 +212,42 @@
     <h2>関数の作り方</h2>
     <ol>
       <li class="slide" id="kansutoha">複数の処理をまとめて実行出来るもの</li>
-      <li class="slide" id="kansu">関数の宣言には、「function 変数名(){ }」を利用 </li>
-      <li class="slide" id="modori">戻り値の指定には、return</li>
+      <li class="slide" id="kansu">関数は、「function 変数名(){ }」を利用 </li>
+      <li class="slide" id="modori">戻り値の指定が欲しい場合には、return を利用</li>
     </ol>
+  </section>
+  
+    </section><section class="slide" id="sample4">
+      <h2>ブラウザを操作してみよう</h2>
+    <ol>
+      <li><p>JavaScriptとは、「ブラウザ内のデータを動的に扱う言語」</p></li>
+      <li><p>Browser自体が、JavaScriptのオブジェクト : BOM(Browser Object Model)</p></li>
+      <li><p>ブラウザのウィンドウ(window)自体にアクセスが出来る </p></li>
+    </ol>
+    <pre>
+      &lt;script&gt;
+        window.location.href = "http://www.google.com/"
+      &lt;/script&gt;
+    </pre>
+    
+  </section>
+    </section>
+    <section class="slide" id="sample5">
+      <h2>ブラウザ内の文章を操作してみよう</h2>
+    <ol>
+      <li><p>大体の人が利用する分野が、このへん</p></li>
+      <li><p>ブラウザ内の文章(Document)オブジェクト : DOM (Document Object Model)</p></li>
+      <li><p>色を変えたり、レイアウトを変えたり。</p></li>
+    </ol>
+    <pre>
+      &lt;script&gt;
+        document.body.bgColor='red';
+      &lt;/script&gt;
+    </pre>
+    <h3 class="slide" id="dom">JavaScriptといえば、「DOMの操作」と認識される方が多い</h3>
+  </section>
+  <section class="slide" id="jquery">
+    <iframe src="http://www.slideshare.net/slideshow/embed_code/7665168" width="600" height="400" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC;border-width:1px 1px 0;margin-bottom:5px" allowfullscreen webkitallowfullscreen mozallowfullscreen> </iframe> <div style="margin-bottom:5px"> <strong> <a href="http://www.slideshare.net/hayatomizuno/jquery-7665168" title="ノンプログラマーのためのjQuery入門" target="_blank">ノンプログラマーのためのjQuery入門</a> </strong> from <strong><a href="http://www.slideshare.net/hayatomizuno" target="_blank">Hayato Mizuno</a></strong> </div>
   </section>
 </article>
 <!-- End slides. -->
